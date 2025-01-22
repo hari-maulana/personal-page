@@ -7,8 +7,8 @@ const outfit = Outfit({
 });
 
 const ovo = Ovo({
-  subsets: ["latin"],
   weight: ["400"],
+  subsets: ["latin"],
 });
 
 export const metadata = {
