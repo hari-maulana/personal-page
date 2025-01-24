@@ -5,6 +5,14 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
+      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <Image
+          src={assets.header_bg_color}
+          alt="background color"
+          className="w-full"
+        />
+      </div>
+
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <a href="#top">
           <Image
@@ -45,7 +53,11 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div>
+        <div className="flex items-center gap-4">
+          <button>
+            <Image src={assets.moon_icon} alt="moon icon" className="w-6" />
+          </button>
+
           <a
             href="#contact"
             className="hidden font-Ovo lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
